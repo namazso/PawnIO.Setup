@@ -98,3 +98,6 @@ Section "Uninstall"
     RMDir "$SMPROGRAMS\PawnIO"
     RMDir "$INSTDIR"
 SectionEnd
+
+!finalize 'sign.bat "%1"'
+!uninstfinalize 'sign.bat "%1"'
