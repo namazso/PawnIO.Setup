@@ -1,0 +1,9 @@
+https://github.com/namazso/PawnIO.Setup
+
+Copyright 2025 namazso <admin@namazso.eu>
+
+All rights reserved!
+
+This installer can be redistributed in unmodified form.
+
+Thanks go to https://reaps.gg/ for providing signed drivers.
