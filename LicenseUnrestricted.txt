@@ -1,7 +1,7 @@
-https://github.com/namazso/PawnIO.Setup
-
+PawnIO - https://pawnio.eu/
 Copyright 2025 namazso <admin@namazso.eu>
-
 All rights reserved!
 
-This is the Unrestricted setup! You'll need to disable driver signature enforcement.
+This installer can be redistributed in unmodified form.
+
+This is the Unrestricted setup! You'll need to enable test mode to load this driver.

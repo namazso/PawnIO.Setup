@@ -1,7 +1,5 @@
-https://github.com/namazso/PawnIO.Setup
-
+PawnIO - https://pawnio.eu/
 Copyright 2025 namazso <admin@namazso.eu>
-
 All rights reserved!
 
 This installer can be redistributed in unmodified form.
