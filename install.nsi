@@ -6,7 +6,18 @@ Unicode True
 
 Name "PawnIO"
 
+!define VERSION 1.0.1.0
+
+VIProductVersion ${VERSION}
+
+VIAddVersionKey "ProductName" "PawnIO"
+VIAddVersionKey "CompanyName" "namazso"
+VIAddVersionKey "LegalCopyright" "${U+A9} 2025 namazso <admin@namazso.eu>"
+VIAddVersionKey "FileDescription" "PawnIO Installer"
+VIAddVersionKey "FileVersion" "${VERSION}"
+
 !ifdef UNRESTRICTED
+    VIAddVersionKey "Comments" "Unrestricted edition"
     OutFile "PawnIO_Unrestricted_setup.exe"
     LicenseData LicenseUnrestricted.txt
 !else
@@ -37,7 +48,7 @@ Section ""
         File /oname=PawnIOLib.pdb x64\PawnIOLib.pdb
         File /oname=PawnIOUtil.exe x64\PawnIOUtil.exe
         File /oname=PawnIOUtil.pdb x64\PawnIOUtil.pdb
-        !if $UNRESTRICTED == 1
+        !ifdef UNRESTRICTED
             File /oname=PawnIO.sys x64\ReleaseUnrestricted\PawnIO.sys
             File /oname=PawnIO.pdb x64\ReleaseUnrestricted\PawnIO.pdb
         !else
@@ -49,7 +60,7 @@ Section ""
         File /oname=PawnIOLib.pdb ARM64\PawnIOLib.pdb
         File /oname=PawnIOUtil.exe ARM64\PawnIOUtil.exe
         File /oname=PawnIOUtil.pdb ARM64\PawnIOUtil.pdb
-        !if $UNRESTRICTED == 1
+        !ifdef UNRESTRICTED
             File /oname=PawnIO.sys ARM64\ReleaseUnrestricted\PawnIO.sys
             File /oname=PawnIO.pdb ARM64\ReleaseUnrestricted\PawnIO.pdb
         !else
