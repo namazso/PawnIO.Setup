@@ -6,7 +6,7 @@ Unicode True
 
 Name "PawnIO"
 
-!define VERSION 1.0.4.0
+!define VERSION 2.0.0.0
 
 VIProductVersion ${VERSION}
 
