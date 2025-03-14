@@ -6,7 +6,7 @@ Unicode True
 
 Name "PawnIO"
 
-!define VERSION 1.0.3.0
+!define VERSION 1.0.4.0
 
 VIProductVersion ${VERSION}
 
@@ -38,7 +38,7 @@ UninstPage instfiles
 
 Section ""
     !insertmacro SERVICE "stop" "PawnIO" ""
-    Sleep 2000
+    Sleep 1000
     !insertmacro SERVICE "delete" "PawnIO" ""
 
     SetOutPath $INSTDIR
@@ -89,7 +89,7 @@ SectionEnd
 
 Section "Uninstall"
     !insertmacro SERVICE "stop" "PawnIO" ""
-    Sleep 2000
+    Sleep 1000
     !insertmacro SERVICE "delete" "PawnIO" ""
 
     ; Remove registry keys
